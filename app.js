@@ -59,7 +59,7 @@ String.prototype.contains = function (content) {
     return this.indexOf(content) !== -1;
 };
 bot.dialog('/', function (session) {
-    if (session.message.text.toLowerCase().contains('chào bot')) {
+    if (session.message.text.toLowerCase().contains(('chào mn đi e').toLowerCase)) {
         session.send(' hello, em là letebot, đệ của a Vinh ạ');
     } else if (session.message.text.toLowerCase().contains('help')) {
         session.send('How can I help you?');
@@ -69,6 +69,6 @@ bot.dialog('/', function (session) {
         simsimi.listen(session.message.text, function (err, msg) {
             if (err) return console.error(err);
             session.send(msg);
-        });
+         });
     }
 });
