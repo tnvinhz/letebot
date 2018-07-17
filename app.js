@@ -59,10 +59,6 @@ String.prototype.contains = function (content) {
     return this.indexOf(content) !== -1;
 };
 bot.dialog('/', function (session) {
-    simsimi.listen(session.message.text, function (err, msg) {
-        if (err) return console.error(err);
-        session.send(msg);
-    });
     if (session.message.text.toLowerCase().contains('chào bot')) {
         session.send(' hello, em là letebot, đệ của a Vinh ạ');
     } else if (session.message.text.toLowerCase().contains('help')) {
