@@ -59,7 +59,7 @@ String.prototype.contains = function (content) {
     return this.indexOf(content) !== -1;
 };
 bot.dialog('/', function (session) {
-    if (session.message.text.toLowerCase().contains(('chào mn đi e').toLowerCase())) {
+    if (session.message.text.toLowerCase().contains(('hello').toLowerCase()) || session.message.text.toLowerCase().contains(('hi').toLowerCase())) {
         session.send(' hello, em là letebot, đệ của a Vinh ạ');
     } else if (session.message.text.toLowerCase().contains('help')) {
         session.send('How can I help you?');
