@@ -6,7 +6,7 @@ var azure = require('botbuilder-azure');
 var Simsimi = require('simsimi');
 
 var simsimi = new Simsimi({
-    key: '6aebc819-b0ba-4cf3-bcb6-12d847bbdabd'
+    key: 'ef2ba992-acba-4fe1-95f8-f4bb937e712f'
 });
 
 var server = restify.createServer();
